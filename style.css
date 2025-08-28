@@ -1,0 +1,70 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+li {
+    list-style: none;
+    font-weight: bold;
+}
+a{
+    text-decoration: none; 
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    flex: 1;
+}
+.menu{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu > li{
+   padding: 5px 10px 10px;
+   font-weight: bold;
+   display: flex;   
+   font-size: small; 
+}
+.menu >li >a{
+    display: block;
+    padding: 10px;
+}
+.submenu > a::after{
+    content: '▼';
+    color: #333;
+    margin-left: 5px;
+    font-size: 10px;
+}
+.menu >li a{
+   font-size: 12px;
+   display: flex;
+   font-weight: normal;
+   line-height: 20px;
+}
+.others > li{
+    padding: 10px 10px 5px 25px;
+}
+.others > li:first-child{
+    position: relative;
+}
+.others > li:first-child input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+.others > li:first-child i{
+    position: absolute;
+    right: 10px;
+    color: #333;
+    cursor: pointer;
+}
+.others >li a{
+   font-size: 12px;
+}
